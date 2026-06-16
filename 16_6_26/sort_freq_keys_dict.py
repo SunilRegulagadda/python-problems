@@ -4,5 +4,7 @@ d={}
 for i in a:
     val=d.get(i,0)
     d[i]=val+1
-d1=dict(sorted(d.items(),key=lambda x:x[0]))
-print(d1)
+x=max(d.values())
+for i in d:
+    if d.get(i)==x:
+        print(i,":",x)
